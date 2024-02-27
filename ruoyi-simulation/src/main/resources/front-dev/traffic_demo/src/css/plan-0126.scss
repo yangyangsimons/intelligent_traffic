@@ -43,7 +43,6 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 800px;
     }
     // right side style
     .rightSide {
@@ -52,6 +51,7 @@ main {
         position: absolute;
         right: 5px;
         top: 8.5rem;
+        width: 380px;
     }
     .bottomSide {
         @include contentBackground;

@@ -1,6 +1,7 @@
 @use "../../../../../css/common.scss" as common;
 .overview {
     @include common.bottomElementSize;
+    width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

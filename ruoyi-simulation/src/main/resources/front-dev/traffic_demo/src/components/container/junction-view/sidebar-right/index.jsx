@@ -1,11 +1,12 @@
 
 import React, { useEffect, useState, useRef } from 'react'
 // import PedestrainOptimize from '../Pedestrain-optimize';
-// import StrategyCompare from '../Strategy-Compare';
+import StrategyCompare from '../Strategy-Compare';
+import RoadMapOptimise from '../roadMap-optimisation/index.js'
 import { ReactComponent as LeftIcon } from '../../../../assets/icon/icon-left.svg';
 import { ReactComponent as ForwardIcon } from '../../../../assets/icon/icon-forward.svg';
 import { ReactComponent as NavIcon } from '../../../../assets/icon/icon-nav.svg';
-
+import Compare from './AverageDelay/AverageDelay.jsx'
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -197,6 +198,8 @@ export default function Index() {
                     <div className="arrow-centre"></div>
                 </div>
             </div>
+            {/* <RoadMapOptimise /> */}
+
 
             <div className="lights-optimize-container">
                 <div className="title"><span className='svg'><NavIcon /></span><span>信号灯优化控制</span></div>
@@ -268,8 +271,9 @@ export default function Index() {
                     </div>
                 </section>
             </div>
-            {/* <PedestrainOptimize />
-            <StrategyCompare /> */}
+
+
+            <Compare />
         </section>
     );
 };

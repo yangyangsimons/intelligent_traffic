@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
@@ -6,12 +6,16 @@ import * as echarts from 'echarts';
 
 export default function ViolationOverview() {
 
-    const violationList = [
-        { name: "已处理", value: 200 },
-        { name: "处理中", value: 80 },
-        { name: "未处理", value: 40 },
-    ]
+    // 初始化状态
+    const [violationList, setViolationList] = useState([
+        { name: "轻微事故", value: 10 },
+        { name: "严重事故", value: 1 },
+        { name: "一般事故", value: 1 },
+    ]);
+    const [violationTotal, setViolationTotal] = useState(violationList.reduce((sum, item) => sum + item.value, 0));
+    const [lastViolationTotal, setLastViolationTotal] = useState(violationTotal);
     const totalValue = violationList.reduce((sum, item) => sum + item.value, 0);
+    const [ratio, setRatio] = useState(0);
     const renderList = violationList.map((item, index) => {
         return (
             <div className="list-item" key={index}>
@@ -23,16 +27,11 @@ export default function ViolationOverview() {
         )
 
     })
-
-
     // set the chart for violation overview
     const chartRef = useRef(null);
     const currentIndexRef = useRef(0);
-
     useEffect(() => {
-
         const myChart = echarts.init(chartRef.current);
-
         const option = {
             tooltip: {
                 trigger: 'item'
@@ -110,14 +109,25 @@ export default function ViolationOverview() {
             currentIndexRef.current += 1;
         };
 
-        const intervalId = setInterval(updateChart, 2000);
+        // const intervalId = setInterval(() => {
+        //     setViolationList(currentList =>
+        //         currentList.map(item => ({
+        //             ...item,
+        //             value: Math.floor(Math.max(item.value - item.value * (Math.random() * 0.05 + 0.01), 0)), // 随机减小1%到5%
+        //         }))
+        //     );
+        //     setViolationTotal(violationList.reduce((sum, item) => sum + item.value, 0));
+        //     setLastViolationTotal(violationTotal);
+        //     setRatio(parseFloat(((violationTotal - lastViolationTotal) / lastViolationTotal * 100).toFixed(2)));
+
+        // }, 4000);
 
         return () => {
-            clearInterval(intervalId);
+            // clearInterval(intervalId);
             myChart.dispose();
         };
 
-    });
+    }, [violationList]);
 
 
 
@@ -131,16 +141,16 @@ export default function ViolationOverview() {
                 <div className="data-display">
                     <div className="overview-container">
                         <div className="total">
-                            <span className='title'>事件总数</span>
-                            <span className="number">{233}<span className="unit">件</span></span>
+                            <span className='title'>有行人天桥</span>
+                            <span className="number">{12}<span className="unit">件</span></span>
                         </div>
                         <div className="last-month">
-                            <span className='title'>上一周期</span>
-                            <span className='number'>183</span>
+                            <span className='title'>无行人天桥</span>
+                            <span className='number'>{330}</span>
                         </div>
                         <div className="compare">
                             <span className='title'>环比</span>
-                            <span className='number'>1.3%</span>
+                            <span className='number'>{94} %</span>
                         </div>
                     </div>
                     <div className="violation-chart-container">

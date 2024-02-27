@@ -37,13 +37,21 @@
     }
 
 
-    function updateTrafficInfo(TrafficInfoName, value) {
-      const key = `${TrafficInfoName}`;
-      localStorage.setItem(key, value);
+    function updateTrafficInfo(trafficInfo, value) {
+      const changes = {};
+      // 遍历对象中的所有键值对
+      Object.entries(trafficInfo).forEach(([key, value]) => {
+        changes[key] = value;
+      });
+      // 在所有键值对更新完毕后，触发一次事件
+      localStorage.setItem('trafficInfo', changes);
+      window.dispatchEvent(new CustomEvent('TrafficInfoChanged', { detail: changes }));
+    }
 
-      // Dispatch a custom event for changes made in the same window/tab
-      const TrafficInfo = `${TrafficInfoName}`;
-      window.dispatchEvent(new CustomEvent('TrafficInfoChanged', { detail: { [TrafficInfo]: value } }));
+    function updateTrafficRank(trafficJunctionRank, value) {
+      // 在所有键值对更新完毕后，触发一次事件
+      localStorage.setItem('trafficJunctionRank', trafficJunctionRank);
+      window.dispatchEvent(new CustomEvent('trafficJunctionRankChanged', { detail: trafficJunctionRank }));
     }
 
     function updateJunctionInfo(junctionInfoName, value) {
@@ -70,13 +78,71 @@
     }
     function lightVideo(play) {
       const lightVideo = document.getElementById('videoElement');
+      let intervalId; // 定义一个变量来存储定时器ID，以便稍后清除
+
       if (play) {
         lightVideo.play();
+
+        let trafficRank = [
+          { name: "枫林三路", status: "轻度拥堵" },
+          { name: "咸嘉湖路", status: "正常" },
+          { name: "桐梓坡路", status: "正常" },
+          { name: "玉兰路", status: "轻度拥堵" }
+        ];
+
+        let trafficInfo = {
+          index: 5, // 初始值设置为4
+          road: 12,
+          congestion: 8,
+          time: 43
+        };
+
+        updateTrafficInfo(trafficInfo);
+        updateTrafficRank(trafficRank);
+
+        intervalId = setInterval(() => {
+          // 仅当index小于10时，才更新数据
+          if (trafficInfo.index < 9) {
+            trafficInfo.index += 1.5; // 递增index，但不超过10
+            trafficInfo.road += 3;
+            trafficInfo.congestion += 2; // 增加拥堵程度
+            trafficInfo.time += 3; // 增加平均等待时间
+
+            trafficRank = trafficRank.map((road, index) => {
+              // 更新道路状态，使其反映更糟糕的交通状况
+              // const statusOrder = ["严重拥堵", "中度拥堵", "轻度拥堵", "正常", "畅通"];
+              const statusOrder = ["正常", "畅通", "轻度拥堵", "中度拥堵", "严重拥堵"];
+              const currentIndex = statusOrder.indexOf(road.status);
+              const nextStatus = currentIndex < statusOrder.length - 1 ? statusOrder[currentIndex + 1] : road.status;
+              return {
+                ...road,
+                status: nextStatus // 更新为更糟糕的状态
+              };
+            });
+
+            updateTrafficInfo(trafficInfo);
+            updateTrafficRank(trafficRank);
+
+            // 假设updateLight函数用于更新交通灯信息，这里可以根据需要调整
+            if (trafficInfo.index < 6) {
+              updateLight(2, 20, false);
+              updateLight(1, 20, true);
+
+            } else {
+              updateLight(3, 40, false);
+            }
+          } else {
+            clearInterval(intervalId); // 如果index达到或超过10，停止定时器
+          }
+        }, 3000); // 每3秒更新一次
       } else {
         lightVideo.pause();
+        clearInterval(intervalId); // 暂停视频时清除定时器
       }
-
     }
+
+
+
     function screenShot() {
       setTimeout(() => {
         window.location.href += "#/junction";
@@ -106,7 +172,7 @@
   </div>
   <div id="root">
   </div>
-  <video id="videoElement" muted src="./light.mp4"></video>
+  <video id="videoElement" muted src="./frog.mp4"></video>
   <script type="text/javascript" src="../statics/record.js"></script>
   <script type="text/javascript" src="../statics/webRtcPlayer.js"></script>
   <script type="text/javascript" src="../statics/loadingPixStream.js"></script>

@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { setInfo } from 'stores/trafficInfoSlice';
 import './index.scss';
 import * as echarts from 'echarts';
 
 export default function TrafficJam() {
+    const info = useSelector((state) => state.trafficInfo);
+    const dispatch = useDispatch();
     useEffect(() => {
         const chartDom = document.getElementById('jam-guage');
         const myChart = echarts.init(chartDom);
@@ -14,15 +18,15 @@ export default function TrafficJam() {
                     startAngle: 180,
                     endAngle: 0,
                     min: 0,
-                    max: 7,
-                    splitNumber: 7,
+                    max: 10,
+                    splitNumber: 10,
                     itemStyle: {
                         color: new echarts.graphic.LinearGradient(
                             0, 0, 1, 0,   // x1, y1, x2, y2 - defines the direction of the gradient
                             [
-                                { offset: 0, color: 'red' },   // starting color
+                                { offset: 0, color: '#5cac5f' },   // starting color
                                 { offset: 0.5, color: 'rgb(231, 209, 9)' },
-                                { offset: 1, color: '#5cac5f' }
+                                { offset: 1, color: 'red' }
                                 // ending color
                             ]
                         ),
@@ -71,9 +75,9 @@ export default function TrafficJam() {
                         offsetCenter: [0, '15%'],
                         valueAnimation: true,
                         formatter: function (value) {
-                            if (value < 2) return "{red|严重拥堵}";
-                            if (value >= 2 && value <= 3.5) return "{yellow|轻微拥堵}";
-                            return "{green|畅通}";
+                            if (value < 2) return "{green| 畅通}";
+                            if (value >= 2 && value <= 4.5) return "{yellow|轻微拥堵}";
+                            return "{red|严重拥堵}";
                         },
                         rich: {
                             red: {
@@ -94,7 +98,7 @@ export default function TrafficJam() {
                     },
                     data: [
                         {
-                            value: 4
+                            value: info.index,
                         }
                     ]
                 }
@@ -105,18 +109,18 @@ export default function TrafficJam() {
 
 
 
-    }, []);
+    }, [info]);
 
 
     return (
         <div className="traffic-jam-container" >
             <div className="title">
-                <span>交通运行指数</span>
+                <span>交通拥堵指数</span>
             </div>
             <div id="jam-guage"></div>
             <div className="text">
                 <h3>交通拥堵指数</h3>
-                <span className="number">{4.3}</span><span className="unit">分</span>
+                <span className="number">{info.index}</span><span className="unit">分</span>
             </div>
         </div>
     )

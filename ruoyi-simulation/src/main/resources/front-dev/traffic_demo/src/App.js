@@ -5,7 +5,7 @@ import PlanMain from 'components/PlanMain';
 import JunctionMain from 'components/JunctionMain';
 import CruiserMain from 'components/CruiserMain';
 import FirstMinute from 'components/FirstMinute';
-import FirstHeader from 'components/FirstHeader';
+// import FirstHeader from 'components/FirstHeader';
 import TextArea from 'components/container/TextArea/TextArea';
 
 export default function App() {

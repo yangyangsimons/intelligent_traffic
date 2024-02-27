@@ -74,7 +74,7 @@ export default function Index() {
                     <span className="number"> {junctionInfo.parkingTimes} <span className="unit">次</span></span>
                     <span className="number"> {junctionInfo.averageDelay} <span className="unit">s</span></span>
                 </div>
-            </div>X
+            </div>
         </div>
     )
 }
