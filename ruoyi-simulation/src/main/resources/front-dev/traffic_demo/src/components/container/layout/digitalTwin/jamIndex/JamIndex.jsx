@@ -1,23 +1,29 @@
 import React, { useEffect, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import styles from '../css/even.module.scss';
+import { setJamIndex } from 'stores/digitalTwin/jamIndexSlice';
 export default function JamIndex() {
 
-    const evenListItems = [{
-        name: "旺龙路",
-        status: "拥堵",
-        direction: "方向： 东向西",
-        length: "2.1",
-        index: "6.2"
-    }, {
-        name: "尖山路",
-        status: "拥堵",
-        direction: "方向： 东向西",
-        length: "1.2",
-        index: "4.8"
-    }]
 
+    const dispatch = useDispatch();
+    const jamIndex = useSelector((state) => state.jamIndex);
+    console.log(jamIndex);
+    useEffect(() => {
+        const handleJamIndexChanged = (event) => {
+            console.log(event.detail);
+            // const key = Object.keys(event.detail);
+            // const value = event.detail[key];
+            // console.log(key, value);
+            dispatch(setJamIndex(event.detail));
+        };
+        window.addEventListener('jamIndexChanged', handleJamIndexChanged);
+        return () => {
+            window.removeEventListener('jamIndexChanged', handleJamIndexChanged);
+        }
+    }, [dispatch])
 
-    const evenList = evenListItems.map((item, index = 0) => {
+    const evenList = jamIndex.map((item, index = 0) => {
+        console.log('jamIndex', jamIndex);
         return (
             <div className={styles.evenListItem} key={index}>
                 <span className={styles.name}>{item.name}</span>

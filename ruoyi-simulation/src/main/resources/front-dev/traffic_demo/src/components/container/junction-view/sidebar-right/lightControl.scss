@@ -28,7 +28,6 @@ section.slider-right {
             height: 20px;
         }
         .arrowsContianer {
-            border: 1px solid green;
             width: 450px;
             height: 450px;
             position: relative;
@@ -74,19 +73,16 @@ section.slider-right {
                     }
                 }
                 .west-arrow {
-                    border: 1px solid red;
                     position: absolute;
                     top: 0;
                     right: 0;
                 }
                 .south-arrow {
-                    border: 1px solid yellow;
                     position: absolute;
                     top: 0;
                     right: 0;
                 }
                 .east-arrow {
-                    border: 1px solid green;
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -111,7 +107,6 @@ section.slider-right {
                 }
             }
             .north {
-                border: 1px solid #349ec9;
                 position: absolute;
                 top: 0;
                 transform: rotate(180deg);
@@ -120,18 +115,15 @@ section.slider-right {
                 }
             }
             .west {
-                border: 1px solid red;
                 position: absolute;
                 left: 0;
                 transform: rotate(90deg);
             }
             .south {
-                border: 1px solid yellow;
                 position: absolute;
                 bottom: 0;
             }
             .east {
-                border: 1px solid green;
                 position: absolute;
                 right: 0;
                 transform: rotate(-90deg);

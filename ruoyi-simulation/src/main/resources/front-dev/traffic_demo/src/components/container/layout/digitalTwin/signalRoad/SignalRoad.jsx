@@ -1,71 +1,69 @@
-import React, { useEffect, useRef } from 'react';
+// SignalRoad.js
+
+import React, { useEffect, useRef, useState } from 'react';
 import styles from '../css/signalJunction.module.scss';
 import { ReactComponent as UP } from 'assets/icon/icon-up.svg';
 import { ReactComponent as DOWN } from 'assets/icon/icon-down.svg';
+import { useSelector, useDispatch } from 'react-redux';
+import { setListItems } from 'stores/digitalTwin/signalRoadSlice';
+
 export default function SignalRoad() {
+    const dispatch = useDispatch();
 
-    // pedestrain optimization list
-    const scrollContainer = useRef(null);
-    // useEffect(() => {
-    //     const startAutoScroll = () => {
-    //         const container = scrollContainer.current;
-    //         const scrollAmount = 2.5; // Adjust for faster/slower scrolling
+    // Get listItems from Redux store
+    const listItems = useSelector((state) => state.signalRoad.listItems);
 
-    //         const interval = setInterval(() => {
-    //             // When you've scrolled to the end of the original content, reset to the top
-    //             if (container.scrollTop >= (container.scrollHeight / 2)) {
-    //                 container.scrollTop = 0; // Set to start without user noticing
-    //             } else {
-    //                 container.scrollTop += scrollAmount;
-    //             }
-    //         }, 50); // Adjust the interval for faster/slower scrolling
+    // State to store listItems with trendDirection
+    const [listItemsWithDirection, setListItemsWithDirection] = useState([]);
 
-    //         return () => clearInterval(interval); // Cleanup on component unmount
-    //     }
+    // useRef to store previous listItems for comparison
+    const prevListItemsRef = useRef([]);
 
-    //     startAutoScroll();
-    // }, []);
+    // Event listener to update listItems in Redux
+    useEffect(() => {
+        const handleSignalRoadDataChanged = (event) => {
+            console.log('SignalRoad Data Changed:', event.detail);
+            dispatch(setListItems(event.detail));
+        };
 
+        window.addEventListener('signalRoadDataChanged', handleSignalRoadDataChanged);
 
-    const staticListItems = [{
-        name: "青山路",
-        index: 1,
-        speed: 20,
-        trend: 18.53,
-    },
-    {
-        name: "旺龙路",
-        index: 3,
-        speed: 30,
-        trend: 20.53,
-    },
-    {
-        name: "岳麓西大道",
-        index: 4,
-        speed: 40,
-        trend: 15.53,
-    },
-    {
-        name: "尖山路",
-        index: 2,
-        speed: 50,
-        trend: 11.53,
-    }
-    ];
+        return () => {
+            window.removeEventListener('signalRoadDataChanged', handleSignalRoadDataChanged);
+        };
+    }, [dispatch]);
 
-    const renderList = staticListItems.map((item, index = 0) => {
+    // Compute trendDirection when listItems changes
+    useEffect(() => {
+        const prevListItems = prevListItemsRef.current;
+        const newListItemsWithDirection = listItems.map((item) => {
+            const prevItem = prevListItems.find((prev) => prev.name === item.name);
+            let trendDirection = 'up'; // default to 'up'
+            if (prevItem) {
+                trendDirection = item.index > prevItem.index ? 'up' : 'down';
+            }
+            return {
+                ...item,
+                trendDirection,
+            };
+        });
+        setListItemsWithDirection(newListItemsWithDirection);
+        prevListItemsRef.current = listItems;
+    }, [listItems]);
+
+    const renderList = listItemsWithDirection.map((item, index) => {
         return (
-            <div className={styles.listItem}>
+            <div className={styles.listItem} key={index}>
                 <span className={styles.rank}>{item.name}</span>
-                <span className={styles.name}>{item.index}</span>
-                <span className={styles.name}>{item.speed}</span>
-                <span className={styles.trend}>{item.trend}% {item.speed > 40 ? <UP /> : <DOWN />}</span>
-                {/* <span className={`${styles[(item.status.includes("拥堵")) ? 'red' : (item.status.includes("畅通")) ? 'green' : '']} ${styles.status}`}>{item.status}</span> */}
-            </div >
-        )
-    })
-
-    // console.log(renderList);
+                <span className={styles.name}>{item.index.toFixed(2)}</span>
+                <span className={styles.name}>{item.speed.toFixed(2)}</span>
+                <span className={styles.trend}>
+                    {item.trend.toFixed(2)}%{' '}
+                    {item.trendDirection === 'up' ? <UP /> : <DOWN />}
+                </span>
+            </div>
+        );
+    });
 
     return (
         <div className={styles.trafficRank}>
@@ -78,10 +76,7 @@ export default function SignalRoad() {
                 <span>平均速度</span>
                 <span>拥堵趋势</span>
             </div>
-            <div className={styles.listContainer} ref={scrollContainer}>
-                {renderList}
-                {/* {renderList} */}
-            </div>
+            <div className={styles.listContainer}>{renderList}</div>
         </div>
-    )
+    );
 }

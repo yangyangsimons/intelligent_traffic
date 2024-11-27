@@ -1,64 +1,71 @@
-import React, { useEffect, useRef } from 'react';
+// SignalJunction.js
+
+import React, { useEffect, useState, useRef } from 'react';
 import styles from '../css/signalJunction.module.scss';
 import { ReactComponent as UP } from 'assets/icon/icon-up.svg';
 import { ReactComponent as DOWN } from 'assets/icon/icon-down.svg';
+import { useSelector, useDispatch } from 'react-redux';
+import { setListItems } from 'stores/digitalTwin/signalJunctionSlice';
+
 export default function SignalJunction() {
+    const dispatch = useDispatch();
 
-    // pedestrain optimization list
-    const scrollContainer = useRef(null);
-    // useEffect(() => {
-    //     const startAutoScroll = () => {
-    //         const container = scrollContainer.current;
-    //         const scrollAmount = 2.5; // Adjust for faster/slower scrolling
+    // Get listItems from Redux store
+    const listItems = useSelector((state) => state.signalJunction.listItems);
 
-    //         const interval = setInterval(() => {
-    //             // When you've scrolled to the end of the original content, reset to the top
-    //             if (container.scrollTop >= (container.scrollHeight / 2)) {
-    //                 container.scrollTop = 0; // Set to start without user noticing
-    //             } else {
-    //                 container.scrollTop += scrollAmount;
-    //             }
-    //         }, 50); // Adjust the interval for faster/slower scrolling
+    // State to store listItems with changes
+    const [listItemsWithChanges, setListItemsWithChanges] = useState([]);
 
-    //         return () => clearInterval(interval); // Cleanup on component unmount
-    //     }
+    // useRef to store previous listItems for comparison
+    const prevListItemsRef = useRef([]);
 
-    //     startAutoScroll();
-    // }, []);
+    // Event listener to update listItems in Redux
+    useEffect(() => {
+        const handleSignalJunctionDataChanged = (event) => {
+            console.log('SignalJunction Data Changed:', event.detail);
+            dispatch(setListItems(event.detail));
+        };
 
+        window.addEventListener('signalJunctionDataChanged', handleSignalJunctionDataChanged);
 
-    const staticListItems = [{
-        name: "尖山路与岳麓西大道交叉口",
-        index: 1,
-        staus: '拥堵',
-        trend: 18.53,
-    },
-    {
-        name: "青山路与尖山路交叉口",
-        index: 3,
-        status: '畅通',
-        trend: 20.53,
-    },
-    {
-        name: "旺龙路与青山路交叉口",
-        index: 4,
-        status: '拥堵',
-        trend: 15.53,
-    }
-    ];
+        return () => {
+            window.removeEventListener('signalJunctionDataChanged', handleSignalJunctionDataChanged);
+        };
+    }, [dispatch]);
 
-    const renderList = staticListItems.map((item, index = 0) => {
+    // Compute indexChange and trendChange when listItems changes
+    useEffect(() => {
+        const prevListItems = prevListItemsRef.current;
+        const newListItemsWithChanges = listItems.map((item) => {
+            const prevItem = prevListItems.find((prev) => prev.name === item.name);
+            let indexChange = 0;
+            let trendChange = 0;
+            if (prevItem) {
+                indexChange = item.index - prevItem.index;
+                trendChange = item.trend - prevItem.trend;
+            }
+            return {
+                ...item,
+                indexChange,
+                trendChange,
+            };
+        });
+        setListItemsWithChanges(newListItemsWithChanges);
+        prevListItemsRef.current = listItems;
+    }, [listItems]);
+
+    const renderList = listItemsWithChanges.map((item, index) => {
         return (
-            <div className={styles.listItem}>
+            <div className={styles.listItem} key={index}>
                 <span className={styles.street}>{item.name}</span>
-                <span className={styles.name}>{item.index}</span>
-                <span className={styles.trend}>{item.trend}% {item.speed > 40 ? <UP /> : <DOWN />}</span>
-                {/* <span className={`${styles[(item.status.includes("拥堵")) ? 'red' : (item.status.includes("畅通")) ? 'green' : '']} ${styles.status}`}>{item.status}</span> */}
-            </div >
-        )
-    })
-
-    // console.log(renderList);
+                <span className={styles.name}>{item.index.toFixed(2)}</span>
+                <span className={styles.trend}>
+                    {item.trend.toFixed(2)}%
+                    {item.trendChange > 0 ? <UP /> : <DOWN />}
+                </span>
+            </div>
+        );
+    });
 
     return (
         <div className={styles.trafficRank}>
@@ -70,10 +77,9 @@ export default function SignalJunction() {
                 <span className={styles.street}>拥堵指数</span>
                 <span>拥堵趋势</span>
             </div>
-            <div className={styles.listContainer} ref={scrollContainer}>
+            <div className={styles.listContainer}>
                 {renderList}
-                {/* {renderList} */}
             </div>
         </div>
-    )
+    );
 }
