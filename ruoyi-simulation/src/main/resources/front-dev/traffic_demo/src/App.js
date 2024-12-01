@@ -11,7 +11,7 @@ import CityMain from 'components/city';
 import DigitalTwinMain from 'components/DigitalTwin';
 
 export default function App() {
-  const Home = () => {
+  let Home = () => {
     return (
       <>
         <Header />
@@ -74,6 +74,7 @@ export default function App() {
       </>
     );
   }
+  Home = DigitalTwin;
   return (
     <Router>
       <div id="layout">

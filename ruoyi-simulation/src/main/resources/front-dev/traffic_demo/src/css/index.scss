@@ -82,3 +82,8 @@ video#videoElement {
     left: 0;
     top: 0;
 }
+#streamingVideo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}

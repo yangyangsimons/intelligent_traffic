@@ -27,3 +27,4 @@ IP动画更新：
     路面里程20km： updateTrafficInfo('road', 20):
     拥堵路口3个： updateTrafficInfo('congestion', 3):
     平均等待时间 20s： updateTrafficInfo('time', 20):
+
