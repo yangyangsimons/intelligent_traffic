@@ -14,7 +14,6 @@
     .evenList {
         height: 90%;
         width: 100%;
-        overflow-y: scroll;
 
         .evenListItem {
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -45,6 +44,12 @@
                 position: absolute;
                 top: 20px;
                 right: 20px;
+            }
+            .position {
+                text-align: center;
+            }
+            .time {
+                text-align: center;
             }
         }
         :first-child {

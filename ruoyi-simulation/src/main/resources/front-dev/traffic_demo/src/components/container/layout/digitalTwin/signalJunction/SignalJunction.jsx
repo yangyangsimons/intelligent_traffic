@@ -74,7 +74,7 @@ export default function SignalJunction() {
             </div>
             <div className={styles.rankContainer}>
                 <span>路段名称</span>
-                <span className={styles.street}>拥堵指数</span>
+                <span className={styles.street}>拥堵里程</span>
                 <span>拥堵趋势</span>
             </div>
             <div className={styles.listContainer}>

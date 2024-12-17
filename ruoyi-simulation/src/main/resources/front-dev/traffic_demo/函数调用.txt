@@ -1,30 +1,180 @@
-数字孪生视频播放
-    开始播放twinPlay(true);
-    结束播放twinPlay(false);
-IP动画更新：
- updateAnimation(1), 参数范围0-4;
 
-更新红绿灯时间：
-    updateLight(lightNumber, value, isGreen):
-   
-    绿灯举例： 
-        东西直行绿灯设置为1os：updateLight(1, 10, true)；
-        东西左转绿灯设置为20s：updateLight(2, 20， true);
-        南北直行绿灯设置为30s：updateLight(3， 30, true);
-        南北左转绿灯设置为40s： updateLight(4, 40, true);
-    
-    红灯举例：
-        东西直行红灯设置为1os：updateLight(1, 10, false)；
-        东西左转红灯设置为20s：updateLight(2, 20， false);
-        南北直行红灯设置为30s：updateLight(3， 30, false);
-        南北左转红灯设置为40s： updateLight(4, 40, false);
-更改交通看板：
 
-    updateTrafficInfo(TrafficInfoName, value):
+1. 修改效果评价组件 evaluationDataChanged(object)
+接收一个对象作为参数，对象中包含四个属性，如下示例
+evaluationDataChanged(
+    {
+  peakHourFlow: 900,
+  twelveHourFlow: 25,
+  position: '新路口位置',
+  content: '新的优化详情内容...'
+}
+)
 
-    举例：
-    路面100辆车： updateTrafficInfo('car', 100):
-    路面里程20km： updateTrafficInfo('road', 20):
-    拥堵路口3个： updateTrafficInfo('congestion', 3):
-    平均等待时间 20s： updateTrafficInfo('time', 20):
+2. 修改协调效果跟踪,接收一个对象作为参数resultTrackDataChanged(object)
+
+resultTrackDataChanged(
+    {
+    timeRange: '15:00:00-15:30:00',
+    district1: '青山路',
+    district2: '尖山路',
+    direction: '西向东',
+    data: [
+        {
+            name: '电警卡口',
+            averageTime: '2.0',
+            timeCompare: '3%',
+            averageParking: '1',
+            parkingCompare: '2%',
+          },
+      {
+        name: '高德地图车轨迹',
+        averageTime: '2.0',
+        timeCompare: '3%',
+        averageParking: '1',
+        parkingCompare: '2%',
+      }
+    ]
+  }
+)
+
+
+3. 更改路口抓拍组件中车辆的信息：junctionCarDataChanged(array)
+
+接收一个数组作为对象，每个对象表示一行信息
+junctionCarDataChanged(
+    [{
+    license: '湘B88888',
+    averageTime: '2.0',
+    averageSpeed: '10',
+    averageParking: '1',
+  },
+  {
+    license: '湘B88888',
+    averageTime: '2.0',
+    averageSpeed: '10',
+    averageParking: '1',
+  },
+  {
+    license: '湘B88888',
+    averageTime: '2.0',
+    averageSpeed: '10',
+    averageParking: '1',
+  },
+    {
+    license: '湘B88888',
+    averageTime: '2.0',
+    averageSpeed: '10',
+    averageParking: '1',
+  }]
+)
+
+4. 更改路口抓拍图片信息
+接收一个数组作为对象，每个对象表示一个图片和位置时间信息， 注意， 一定要把图片路径放在和GLB文件同级的images下面
+junctionImageDataChanged(
+    [
+    {
+      src: 'images/2.png',
+      title: '新路口',
+      time: '16:00:00',
+    },
+    {
+        src: 'images/2.png',
+        title: '新路口',
+        time: '16:00:00',
+      },
+      {
+        src: 'images/2.png',
+        title: '新路口',
+        time: '16:00:00',
+      },
+      {
+        src: 'images/2.png',
+        title: '新路口',
+        time: '16:00:00',
+      }
+  ]
+)
+
+
+
+5. 更改路口信息，junctionInfoDataChanged()
+接收一个对象作为参数，对象中包含四个属性如下示例
+示例代码如下：
+
+junctionInfoDataChanged(
+    {
+    district1: '青山路',
+    district2: '岳麓西大道',
+    carLanes: 4,
+    pedestrianLanes: 2,
+  }
+)
+
+6. 更改控制策略：controlStrategyDataChanged(object)
+接收一个对象作为参数，对象中包含四个属性如下示例：
+
+controlStrategyDataChanged(
+    {
+    day: '星期三',
+    time: '晚高峰(17:00-19:00)',
+    controlMode1: '辅路优先',
+    controlMode2: '感应控制'
+  }
+)
+
+7. 更改红绿灯控制和时间配比（这两个模块是联动一起的）示例如下：
+
+lightControlDataChanged(
+     {
+    north: {
+        left: {
+            redDurationTime: 200,
+            greenDurationTime: 30,
+            initialLight: 'green',
+        },
+        forward: {
+            redDurationTime: 25,
+            greenDurationTime: 35,
+            initialLight: 'red',
+        },
+    },
+    east: {
+        left: {
+            redDurationTime: 28,
+            greenDurationTime: 38,
+            initialLight: 'red',
+        },
+        forward: {
+            redDurationTime: 33,
+            greenDurationTime: 43,
+            initialLight: 'green',
+        },
+    },
+    south: {
+        left: {
+            redDurationTime: 32,
+            greenDurationTime: 42,
+            initialLight: 'red',
+        },
+        forward: {
+            redDurationTime: 37,
+            greenDurationTime: 47,
+            initialLight: 'green',
+        },
+    },
+    west: {
+        left: {
+            redDurationTime: 25,
+            greenDurationTime: 35,
+            initialLight: 'red',
+        },
+        forward: {
+            redDurationTime: 30,
+            greenDurationTime: 40,
+            initialLight: 'green',
+        },
+    },
+}
+)
 

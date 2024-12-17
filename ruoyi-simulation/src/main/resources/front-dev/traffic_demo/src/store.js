@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import animationReducer from "./stores/animationSlice";
 import lightTimerReducer from "./stores/lightTimerSlice";
 import infoReducer from "./stores/trafficInfoSlice";
-import junctionReducer from "./stores/junctionInfoSlice";
+// import junctionReducer from "./stores/junctionInfoSlice";
 import rankReducer from "./stores/TrafficJunctionRankSlice";
 import junctionControlReducer from "./stores/junctionControlSlice";
 import parameterReducer from "./stores/parameterSlice";
@@ -14,12 +14,18 @@ import wholeIndexReducer from "./stores/digitalTwin/wholeIndexSlice";
 import signalRoadReducer from "./stores/digitalTwin/signalRoadSlice";
 import signalJunctionReducer from "./stores/digitalTwin/signalJunctionSlice";
 import scrollAlertReducer from "./stores/digitalTwin/scrollAlertSlice";
+import LightControlReducer from "./stores/junctionLight/lightControlSlice";
+import ControlStrategyReducer from "./stores/junctionLight/controlStrategySlice";
+import junctionInfoReudcer from "./stores/junctionLight/junctionInfoSlice";
+import evaluationReducer from "./stores/junctionLight/evaluationSlice";
+import resultTrackReducer from "./stores/junctionLight/resultTrackSlice";
+import carDataReducer from "./stores/junctionLight/carDataSlice";
+import imageDataReducer from "./stores/junctionLight/imageDataSlice";
 const store = configureStore({
     reducer: {
         animation: animationReducer,
         lightTimer: lightTimerReducer,
         trafficInfo: infoReducer,
-        junctionInfo: junctionReducer,
         trafficRank: rankReducer,
         junctionControl: junctionControlReducer,
         parameters: parameterReducer,
@@ -31,6 +37,13 @@ const store = configureStore({
         signalRoad: signalRoadReducer,
         signalJunction: signalJunctionReducer,
         scrollAlert: scrollAlertReducer,
+        lightControl: LightControlReducer,
+        controlStrategy: ControlStrategyReducer,
+        junctionInfo: junctionInfoReudcer,
+        evaluation: evaluationReducer,
+        resultTrack: resultTrackReducer,
+        carData: carDataReducer,
+        imageData: imageDataReducer,
     },
 });
 

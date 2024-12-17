@@ -1,0 +1,123 @@
+@use "../../../../../css/common.scss" as common;
+
+.evaluation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    // background-color: rgba(255, 255, 255, 0.3);
+
+    .title {
+        @include common.bottomElementTitle;
+    }
+    .dataContainer {
+        width: 100%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-evenly;
+
+        span.onRoadCar {
+            margin: 5px;
+            height: 65px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            vertical-align: middle;
+            text-align: left;
+            padding-left: 55px;
+            line-height: 65px;
+            text-wrap: nowrap;
+            .number {
+                font-weight: bold;
+                color: aqua;
+            }
+        }
+        span.capacity {
+            margin: 5px;
+            height: 65px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            vertical-align: middle;
+            text-align: left;
+            padding-left: 75px;
+            line-height: 65px;
+            .number {
+                padding: 0 5px;
+                font-weight: bold;
+                color: aqua;
+            }
+        }
+        // .road {
+        //     background-image: url("../../../../../assets/img/road.png");
+        // }
+        .onRoadCar {
+            background-image: url("../../../../../assets/img/car.png");
+        }
+        // .people {
+        //     background-image: url("../../../../../assets/img/people.png");
+        // }
+        .capacity {
+            background-image: url("../../../../../assets/img/capacity.png");
+        }
+        // .junction {
+        //     background-image: url("../../../../../assets/img/summaryJunction.jpg");
+        // }
+        // .cloudjunction {
+        //     background-image: url("../../../../../assets/img/summaryCloudJunction.jpg");
+        // }
+    }
+    .optimiseRecord {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .recordTitle {
+            width: 100px;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 3rem;
+            background-color: rgba(28, 42, 71, 0.7);
+            color: white;
+        }
+        .recordContainer {
+            width: 100%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+
+            .rank {
+                background: url("../../../../../assets/img/scrollAlert.png") no-repeat;
+                background-size: cover;
+                height: 90%;
+                width: 3px;
+            }
+            .contentContainer {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .position {
+                    font-size: 1.1rem;
+                    line-height: 1.2rem;
+                    width: 100%;
+                    text-align: left;
+                }
+                .content {
+                    line-height: 1.1rem;
+                    margin-top: 15px;
+                    width: 100%;
+                    text-align: left;
+                    align-self: flex-start;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1; // 控制显示的行数为1
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

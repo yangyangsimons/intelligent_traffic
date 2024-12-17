@@ -29,9 +29,9 @@ export default function JamIndex() {
                 <span className={styles.name}>{item.name}</span>
                 <div className={styles.contentContainer}>
                     <span className={styles.status}>{item.status}</span>
-                    <span className={styles.direction}>{item.direction}</span>
-                    <span className={styles.position}>{item.length} km</span>
-                    <span className={styles.time}>拥堵指数{item.index}</span>
+                    <span className={styles.direction}>平均速度<br />{item.speed}km/h</span>
+                    <span className={styles.position}>拥堵趋势<br />{item.trend}% </span>
+                    <span className={styles.time}>拥堵指数<br />{item.index}</span>
                 </div>
 
             </div>

@@ -19,6 +19,11 @@ const initialState = {
             index: 4,
             trend: 15.53,
         },
+        {
+            name: '旺龙路与青山路交叉口',
+            index: 4,
+            trend: 15.53,
+        },
     ],
 };
 
