@@ -6,26 +6,14 @@ import OptGraph from '../OptGraph/OptGraph'
 // 展示：路口信控优化策略三段文字
 // 文本来自 redux: state.junctionOptstrategy.{previousStr,currentOptr,result}
 export default function OptText({ onClose }) {
-  const { previousStr, currentOptr, result } = useSelector(
+  const { previousStr, currentStr, result } = useSelector(
     (state) => state.junctionOptstrategy
   )
 
   const dispatch = useDispatch()
   const [metric, setMetric] = useState('averageThroughput')
 
-  const averageThroughput = {
-    current: [32, 44, 25, 28, 29, 86],
-    weekly: [39, 57, 30, 33, 33, 115],
-  }
-  const delayTime = {
-    current: [203, 236, 147, 154, 190, 616],
-    weekly: [157, 173, 114, 129, 154, 388],
-  }
-  const carLine = {
-    current: [8.3, 9.9, 5.3, 6.7, 7.9, 28.6],
-    weekly: [6.3, 7, 7, 4.25, 5.32, 6.15, 17.15],
-  }
-  //在这里监听选择框，如果选择的值发生了变化，就传入不同的数据给graph，通过window的事件
+  // 在这里监听选择框，如果选择的值发生了变化，通过事件通知外部（不再内置默认数据）
 
   useEffect(() => {
     const handleJunctionOptstrategyChanged = (event) => {
@@ -50,41 +38,24 @@ export default function OptText({ onClose }) {
   const handleMetricChange = (e) => {
     const value = e.target.value
     setMetric(value)
-    triggerOptSelectChanged(value)
-  }
-
-  const triggerOptSelectChanged = (value) => {
-    const map = {
-      averageThroughput,
-      delayTime,
-      carLine,
-    }
-    const data = map[value]
-    if (!data) return
-    // 方式一：优先调用全局函数（按需求）
-    if (
-      typeof window !== 'undefined' &&
-      typeof window.optSelectChanged === 'function'
-    ) {
-      window.optSelectChanged({ [value]: data })
-    } else {
-      // 方式二：如果函数不存在，降级为自定义事件，方便图表监听
-      try {
-        const evt = new CustomEvent('optSelectChanged', {
-          detail: { [value]: data },
-        })
-        window.dispatchEvent(evt)
-      } catch (err) {
-        console.warn('optSelectChanged dispatch failed', err)
+    // 告知外部当前指标变化，不附带任何默认数据
+    if (typeof window !== 'undefined') {
+      if (typeof window.optMetricChanged === 'function') {
+        window.optMetricChanged({ metric: value })
+      } else {
+        try {
+          const evt = new CustomEvent('optMetricChanged', {
+            detail: { metric: value },
+          })
+          window.dispatchEvent(evt)
+        } catch (err) {
+          console.warn('optMetricChanged dispatch failed', err)
+        }
       }
     }
   }
 
-  // 初始化发送一次默认指标
-  useEffect(() => {
-    triggerOptSelectChanged(metric)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  // 不再初始化发送任何默认数据，外部将通过事件推送实际数据
 
   // 支持换行显示（若字符串中包含 \n）
   const renderMultiline = (text) =>
@@ -115,7 +86,7 @@ export default function OptText({ onClose }) {
             <span className={styles.dot}></span>
             <span className={styles.text}>当前方案</span>
           </div>
-          <div className={styles.content}>{renderMultiline(currentOptr)}</div>
+          <div className={styles.content}>{renderMultiline(currentStr)}</div>
         </div>
         <div className={styles.optResult}>
           <div className={styles.optResultTitle}>

@@ -17,7 +17,7 @@ export default function App() {
         <Header />
         <Nav />
         <TrafficDetect />
-        <TextArea />
+        {/* <TextArea /> */}
       </>
     )
   }
@@ -29,7 +29,7 @@ export default function App() {
         <Header />
         <Nav />
         <JunctionLight></JunctionLight>
-        <TextArea />
+        {/* <TextArea /> */}
       </>
     )
   }
@@ -40,7 +40,7 @@ export default function App() {
         <Header />
         <Nav />
         <TrafficFlow></TrafficFlow>
-        <TextArea />
+        {/* <TextArea /> */}
       </>
     )
   }
@@ -51,7 +51,7 @@ export default function App() {
         <Header />
         <Nav />
         <CruiserPage />
-        <TextArea />
+        {/* <TextArea /> */}
       </>
     )
   }
@@ -63,7 +63,7 @@ export default function App() {
         <Header />
         <Nav />
         <DigitalTwinPage />
-        <TextArea />
+        {/* <TextArea /> */}
       </>
     )
   }
@@ -74,7 +74,7 @@ export default function App() {
         <Header />
         <Nav />
         <GPT />
-        <TextArea />
+        {/* <TextArea /> */}
       </>
     )
   }

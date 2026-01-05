@@ -1,0 +1,364 @@
+"filename", "language", "JSON with Comments", "JSON", "JavaScript", "PostCSS", "Markdown", "Properties", "HTML", "XML", "SCSS", "JavaScript JSX", "comment", "blank", "total"
+"c:\Users\a603\work\intelligent_traffic\frontend\.env", "Properties", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\README.md", "Markdown", 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 33, 71
+"c:\Users\a603\work\intelligent_traffic\frontend\jsconfig.json", "JSON with Comments", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8
+"c:\Users\a603\work\intelligent_traffic\frontend\package-lock.json", "JSON", 0, 22035, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22036
+"c:\Users\a603\work\intelligent_traffic\frontend\package.json", "JSON", 0, 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\public\README.md", "Markdown", 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 33, 71
+"c:\Users\a603\work\intelligent_traffic\frontend\public\digitalTwinEvent.js", "JavaScript", 0, 0, 93, 0, 0, 0, 0, 0, 0, 0, 2, 16, 111
+"c:\Users\a603\work\intelligent_traffic\frontend\public\events202508.js", "JavaScript", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"c:\Users\a603\work\intelligent_traffic\frontend\public\index.html", "HTML", 0, 0, 0, 0, 0, 0, 133, 0, 0, 0, 0, 19, 152
+"c:\Users\a603\work\intelligent_traffic\frontend\public\junctionEvent.js", "JavaScript", 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 10, 9, 59
+"c:\Users\a603\work\intelligent_traffic\frontend\public\lightControl.js", "JavaScript", 0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 11, 7, 89
+"c:\Users\a603\work\intelligent_traffic\frontend\public\manifest.json", "JSON", 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 26
+"c:\Users\a603\work\intelligent_traffic\frontend\public\output\README.md", "Markdown", 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 33, 71
+"c:\Users\a603\work\intelligent_traffic\frontend\public\output\manifest.json", "JSON", 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"c:\Users\a603\work\intelligent_traffic\frontend\src\App.js", "JavaScript", 0, 0, 87, 0, 0, 0, 0, 0, 0, 0, 6, 3, 96
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\C3.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\Lineup1.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\Total.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\car.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\congestedJunction.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\forward.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-bus.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 48, 0, 0, 0, 1, 49
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-camera.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 1, 50
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-capacity.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-car.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-cloud.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-down.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-forward.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-green-pointer.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-human.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 47, 0, 0, 0, 1, 48
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-junction.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-left.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-line.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-list-arrow.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-nav.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-onroadCar.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-park.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 1, 47
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-people.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-pointer.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-police-car.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 1, 50
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-rain.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-red-pointer.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-road.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-snow.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-sun.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-triangle.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-up.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\icon-warning.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 1, 45
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\parking.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\signal.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\time2.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\traffic-light-icon.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\trafficLight.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\icon\turnleft.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\image\DOWN.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\assets\image\UP.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\AMap\Amap.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 414, 49, 51, 514
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\AMap\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 1, 8
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\Centre.js", "JavaScript", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 20, 7, 37
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\CruiserMain.js", "JavaScript", 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 3, 19
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\DigitalTwin.js", "JavaScript", 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 2, 22
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\FirstHeader.js", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\Header.js", "JavaScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 18, 1, 38
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\JunctionMain.js", "JavaScript", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 3, 2, 27
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\Nav.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 0, 5, 39
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\PlanMain.js", "JavaScript", 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 3, 4, 40
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\CruiserSetting\CruiserSetting.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 166, 4, 14, 184
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\CruiserSetting\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 149, 0, 2, 23, 174
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\FlowSpeed\FlowSpeed.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 171, 3, 9, 183
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\FlowSpeed\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 4, 7, 66
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\GreenWave\GreenWave.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 177, 4, 14, 195
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\GreenWave\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 154, 0, 2, 23, 179
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\JunctionGreenFLow\JunctionGreenFlow.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 239, 9, 20, 268
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\JunctionGreenFLow\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 78, 0, 0, 8, 86
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\JunctionOpt\JunctionOpt.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 54, 1, 5, 60
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\JunctionOpt\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 73, 0, 1, 3, 77
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\scrollAlert\ScrollAlert.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 162, 3, 17, 182
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\bottoms\scrollAlert\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 125, 0, 0, 6, 131
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\city.js", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\TextArea\TextArea.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 178, 21, 29, 228
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\TextArea\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 2, 51
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\Weather\Weather.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 4, 47
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\Weather\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 21, 2, 56
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\cruiser-view\Map\Map.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 6, 12, 81
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\cruiser-view\Map\Map.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 1, 7
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Line-container\index.js", "JavaScript", 0, 0, 113, 0, 0, 0, 0, 0, 0, 0, 4, 7, 124
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Pedestrain-optimize\index.js", "JavaScript", 0, 0, 135, 0, 0, 0, 0, 0, 0, 0, 17, 5, 157
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Pedestrain-optimize\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 94, 0, 0, 3, 97
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Pie-container\index.js", "JavaScript", 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 0, 2, 59
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Strategy-Compare\index.js", "JavaScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Strategy-Compare\strategy.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 1, 1, 34
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Traffic-Flow\index.js", "JavaScript", 0, 0, 43, 0, 0, 0, 0, 0, 0, 0, 0, 2, 45
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Traffic-Overview\JunctionOverview.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 10, 57
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\Traffic-Overview\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 85, 0, 1, 10, 96
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\BigMap.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 212, 43, 17, 272
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\Chat.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 155, 11, 25, 191
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\ClickOptimise.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 141, 6, 4, 151
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\ControlStrategy.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 3, 8, 74
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\Evaluation.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 1, 9, 65
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\JunctionCapture.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 15, 11, 91
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\JunctionInfo.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 1, 5, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\LeftSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 6, 20
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\Light.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 2, 8, 43
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\LightControl.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 71, 20, 5, 96
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\ResultTrack.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 1, 7, 91
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\RightSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 4, 3, 31
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\TimeProgress.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 3, 73
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\chatComponent.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 75, 0, 1, 12, 88
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\clickOptimise.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 1, 2, 48
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\controlStrategy.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 98, 0, 0, 1, 99
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\evaluation.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 122, 0, 19, 5, 146
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\junctionCapture.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 8, 3, 81
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\junctionInfo.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0, 1, 67
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\leftSide.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 1, 1, 13
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\light.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 1, 19
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\lightControl.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 106, 0, 34, 2, 142
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\map.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1, 10
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\resultTrack.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 140, 0, 0, 4, 144
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\rightSide.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 1, 13
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\newStyle\css\timeProgress.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 51, 0, 0, 1, 52
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\sidebar-left\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 2, 6, 24
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\sidebar-left\style.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 224, 0, 4, 13, 241
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\sidebar-right\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 242, 13, 34, 289
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\sidebar-right\junction\JunctionControl.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 2, 25
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\sidebar-right\junction\junction.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 1, 33
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\sidebar-right\lightControl.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 284, 0, 109, 17, 410
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\junction-view\sidebar-right\style.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 349, 0, 6, 19, 374
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\LeftSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 1, 15
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\RightSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 2, 14
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\css\even.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 5, 2, 76
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\css\leftside.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 1, 1, 15
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\css\rightside.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 1, 13
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\css\specialTarget.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 9
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\css\speedGuage.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 1, 28
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\css\trafficVolume.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 1, 2, 48
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\css\violationStatistic.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 9
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\even\Even.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 72, 4, 5, 81
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\specialTarget\SpecialTarget.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 11, 103
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\speedGUage\SpeedGuage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 444, 4, 28, 476
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\trafficVolume\TrafficVolume.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 113, 4, 11, 128
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\violationStatistic\ViolationStatistic.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 79, 0, 12, 91
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\city\weather\Weather.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 6, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\LeftSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 2, 18
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\OptimiseOverview\OptimiseOverview.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 61, 2, 8, 71
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\RightSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 2, 18
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\controlModule\ControlModule.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 14, 3, 57
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\controlModule.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 0, 2, 40
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\even.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 5, 2, 70
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\leftside.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 1, 1, 15
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\optimiseAnalysis.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 4, 50
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\optimiseOverview.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 1, 68
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\rightside.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 1, 13
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\scrollAlert.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 4, 95
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\signalJunction.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 5, 101
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\specialTarget.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 9
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\trafficVolume.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 1, 2, 48
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\violationStatistic.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 9
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\css\wholeIndex.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 1, 1, 27
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\jamIndex\JamIndex.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 43, 7, 6, 56
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\operationAnalysis\OperationAnalysis.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 132, 6, 13, 151
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\scrollAlert\ScrollAlert.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 75, 9, 18, 102
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\signalJunction\SignalJunction.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 5, 11, 65
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\signalRoad\SignalRoad.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 3, 9, 59
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\specialTarget\SpecialTarget.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 11, 103
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\violationStatistic\ViolationStatistic.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 79, 0, 12, 91
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\weather\Weather.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 6, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\digitalTwin\wholeIndex\WholeIndex.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 242, 4, 11, 257
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\Guage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 4, 18
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\LeftSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 7, 1, 32
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\OperationDetect.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 2, 18
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\RightSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 3, 1, 20
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\TotalTrafficVolume.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 9, 3, 38
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\TrafficInfo-Guage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 396, 13, 14, 423
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\TrafficSpeed.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 8, 135
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\functionIcons.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 34, 0, 0, 4, 38
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\guage.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 2, 1, 45
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\leftside.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 2, 1, 38
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\operationDetect.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 0, 2, 46
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\rightside.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 1, 11
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\scrollAlert.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 86, 0, 0, 4, 90
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\totalTrafficVolume.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 17, 2, 81
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\trafficInfoGuage.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 1, 47
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\trafficSpeed.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1, 10
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\css\weather.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 0, 3, 48
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\functionIcons\FunctionIcon.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 3, 50
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\scrollAlert\ScrollAlert.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 113, 5, 14, 132
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\highway\weather\Weather.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 6, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\LeftSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 1, 3, 17
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\Map\Map.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 260, 45, 29, 334
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\RightSide.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 1, 1, 15
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\TrafficCompare.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 116, 9, 9, 134
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\TrafficInfo3Guage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 442, 13, 14, 469
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\TrafficRank\TrafficRank.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 46, 23, 10, 79
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\TrafficSummary.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 2, 7, 24
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\css\leftSide.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\css\map.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1, 10
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\css\rightSide.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\css\trafficCompare.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 1, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\css\trafficInfo3Guage.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 1, 47
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\css\trafficRank.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 56, 0, 0, 3, 59
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\layout\homeview\css\trafficSummary.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 51, 0, 1, 4, 56
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\Overview\Overview.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 5, 38
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\Overview\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 84, 0, 1, 10, 95
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\TopViolation\TopViolation.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 6, 39
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\TopViolation\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 52, 0, 0, 6, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\TrafficJam\TrafficJam.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 114, 1, 9, 124
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\TrafficJam\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 1, 47
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\TrafficRank\TrafficRank.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 27, 10, 79
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\TrafficRank\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 2, 59
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\AverageDelay\AverageDelay.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 109, 4, 8, 121
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\AverageDelay\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 1, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\Overview\Overview.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 8, 54
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\Overview\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 84, 0, 1, 10, 95
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\TopViolation\TopViolation.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 6, 39
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\TopViolation\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 52, 0, 0, 6, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\TrafficJam\TrafficJam.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 114, 1, 9, 124
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\TrafficJam\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 1, 47
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\TrafficRank\TrafficRank.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 27, 10, 79
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\bottom\TrafficRank\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 2, 59
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-left\Bottom\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 1, 9, 62
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-left\Bottom\style.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 93, 0, 0, 4, 97
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-left\Top\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 2, 35
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-left\Top\style.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 3, 42
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-left\TrafficFlow\TrafficFlow.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 3, 47
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-left\TrafficFlow\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 2, 3, 60
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\Bottom\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 15, 9, 124
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\Bottom\style.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 2, 28
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\FunctionIcons\FunctionIcons.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 2, 46
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\FunctionIcons\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 4, 32
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\Top\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 25, 17, 137
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\Top\style.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 75, 0, 0, 3, 78
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\ViolationOverview\ViolationOverview.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 137, 1, 24, 162
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\container\plan-view\sidebar-right\ViolationOverview\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 161, 0, 2, 12, 175
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\highway.js", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 2, 23
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\home.js", "JavaScript", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 1, 18
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FlowAnalysis\FlowAnalysis.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 3, 5, 135
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FlowAnalysis\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 1, 2, 25
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FlowRuntime\FLowRuntime.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 5, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FlowRuntime\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 2, 9, 77
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FlowTrend\FlowTrend.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 57, 5, 11, 73
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FlowTrend\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 72, 0, 1, 4, 77
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FunctionBar\FunctionBar.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 4, 37
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\FunctionBar\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 2, 28
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\Icons\Icons.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\Icons\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\JunctionOptResult\JunctionOptResult.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 145, 4, 7, 156
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\JunctionOptResult\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 1, 2, 33
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\JunctionOptstrategy\JunctionOptstrategy.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 61, 3, 7, 71
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\JunctionOptstrategy\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 58, 0, 2, 1, 61
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\JunctionTimeprogress\JunctionTimeprogress.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 465, 20, 42, 527
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\JunctionTimeprogress\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 80, 0, 1, 8, 89
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\OptGraph\OptGraph.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 114, 8, 10, 132
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\OptGraph\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 6, 6, 69
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\OptText\OptText.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 126, 9, 12, 147
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\OptText\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 1, 5, 96
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\RightTopBtn\RightTopBtn.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 2, 3, 96
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\RightTopBtn\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 102, 0, 5, 9, 116
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TotalTrafficMonitor\TotalTrafficMonitor.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 328, 10, 15, 353
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TotalTrafficMonitor\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 1, 1, 27
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TrafficCongestionData\TrafficCongestionData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 88, 3, 7, 98
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TrafficCongestionData\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 87, 0, 0, 6, 93
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TrafficCongestionMonitor\TrafficCongestionMonitor.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 1, 5, 53
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TrafficCongestionMonitor\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 52, 0, 1, 3, 56
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TrafficLive\TrafficLive.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 1, 4, 42
+"c:\Users\a603\work\intelligent_traffic\frontend\src\components\rights\TrafficLive\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 2, 5, 32
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\FirstHeader.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 3, 46
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\centre.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 1, 1, 18
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\common.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 208, 0, 20, 14, 242
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\header.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 5, 2, 53
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\highway.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 8, 3, 54
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\home.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 8, 2, 52
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\index.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 44, 3, 97
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\junction.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 3, 2, 44
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\nav.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 2, 6, 49
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\plan-0126.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 18, 4, 67
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\plan.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 3, 4, 54
+"c:\Users\a603\work\intelligent_traffic\frontend\src\css\reset.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 129, 0, 5, 1, 135
+"c:\Users\a603\work\intelligent_traffic\frontend\src\index.js", "JavaScript", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"c:\Users\a603\work\intelligent_traffic\frontend\src\lightControl.js", "JavaScript", 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 12, 4, 84
+"c:\Users\a603\work\intelligent_traffic\frontend\src\main.js", "JavaScript", 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 5, 3, 65
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\CruiserPage\CruiserPage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 2, 27
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\CruiserPage\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 9, 1, 55
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\DigitalTwin\DigitalTwin.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 3, 30
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\DigitalTwin\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 4, 1, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\GPT\GPT.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 287, 20, 40, 347
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\GPT\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 210, 0, 1, 34, 245
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\JunctionLight\JunctionLight.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 2, 1, 42
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\JunctionLight\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 4, 2, 71
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\TrafficDetect\TrafficDetect.js", "JavaScript", 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 1, 2, 38
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\TrafficDetect\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 4, 1, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\TrafficFlow\TrafficFlow.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 3, 35
+"c:\Users\a603\work\intelligent_traffic\frontend\src\pages\TrafficFlow\index.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 4, 1, 58
+"c:\Users\a603\work\intelligent_traffic\frontend\src\parameterWebsocket.js", "JavaScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 1, 1, 20
+"c:\Users\a603\work\intelligent_traffic\frontend\src\scenario.json", "JSON", 0, 241, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 241
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\css\bootstrap-theme.css", "PostCSS", 0, 0, 0, 581, 0, 0, 0, 0, 0, 0, 6, 0, 587
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\css\bootstrap-theme.min.css", "PostCSS", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5, 0, 6
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\css\bootstrap.css", "PostCSS", 0, 0, 0, 6826, 0, 0, 0, 0, 0, 0, 8, 0, 6834
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\css\bootstrap.min.css", "PostCSS", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5, 0, 6
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\fonts\glyphicons-halflings-regular.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 288, 0, 0, 0, 0, 288
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\js\bootstrap.js", "JavaScript", 0, 0, 1752, 0, 0, 0, 0, 0, 0, 0, 211, 618, 2581
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\js\bootstrap.min.js", "JavaScript", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 5, 0, 6
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\bootstrap-3.4.1-dist\js\npm.js", "JavaScript", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 1, 0, 13
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\jquery-3.7.0.min.js", "JavaScript", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\loadingPixStream.js", "JavaScript", 0, 0, 916, 0, 0, 0, 0, 0, 0, 0, 95, 152, 1163
+"c:\Users\a603\work\intelligent_traffic\frontend\src\statics\webRtcPlayer.js", "JavaScript", 0, 0, 213, 0, 0, 0, 0, 0, 0, 0, 36, 48, 297
+"c:\Users\a603\work\intelligent_traffic\frontend\src\store.js", "JavaScript", 0, 0, 80, 0, 0, 0, 0, 0, 0, 0, 1, 2, 83
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\TrafficJunctionRankSlice.js", "JavaScript", 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 2, 32
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\animationSlice.js", "JavaScript", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 2, 17
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwinControlPattrenSlice.js", "JavaScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\analysisSlice.js", "JavaScript", 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 4, 31
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\controlModuleSlice.js", "JavaScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\jamIndexSlice.js", "JavaScript", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 2, 24
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\optimiseOverviewSlice.js", "JavaScript", 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 4, 30
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\scrollAlertSlice.js", "JavaScript", 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 1, 5, 42
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\signalJunctionSlice.js", "JavaScript", 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 1, 6, 59
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\signalRoadSlice.js", "JavaScript", 0, 0, 44, 0, 0, 0, 0, 0, 0, 0, 1, 5, 50
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\digitalTwin\wholeIndexSlice.js", "JavaScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 1, 5, 24
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\highwayWeatherSlice.js", "JavaScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionControlSlice.js", "JavaScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 2, 21
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionInfoSlice.js", "JavaScript", 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 2, 19
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\aiMessageSlice.js", "JavaScript", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\carDataSlice.js", "JavaScript", 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 1, 3, 42
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\controlStrategySlice.js", "JavaScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 1, 4, 39
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\evaluationSlice.js", "JavaScript", 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 1, 3, 30
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\imageDataSlice.js", "JavaScript", 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 1, 3, 28
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\junctionInfoSlice.js", "JavaScript", 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 1, 3, 26
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\lightControlSlice.js", "JavaScript", 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 2, 5, 69
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\mapSlice.js", "JavaScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 1, 3, 23
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\positionSlice.js", "JavaScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 1, 4, 24
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\resultTrackSlice.js", "JavaScript", 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 1, 3, 65
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\junctionLight\timeShowSlice.js", "JavaScript", 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 1, 4, 24
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\lightTimerSlice.js", "JavaScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\parameterSlice.js", "JavaScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 4, 4, 26
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\districtSpeedSlice.js", "JavaScript", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 3, 18
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\flowAnalysisSlice.js", "JavaScript", 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 5, 39
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\flowRuntimeSlice.js", "JavaScript", 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 3, 5, 40
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\flowSpeedSlice.js", "JavaScript", 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 2, 6, 48
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\junctionOptResultSlice.js", "JavaScript", 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 3, 5, 34
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\junctionOptSlice.js", "JavaScript", 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 3, 5, 46
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\junctionOptstrategySlice.js", "JavaScript", 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 3, 5, 46
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\junctionTimeprogressSlice.js", "JavaScript", 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 2, 5, 133
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\lightControlSlice.js", "JavaScript", 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 4, 4, 57
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\optselectSlice.js", "JavaScript", 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 2, 6, 41
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\scrollAlertSlice.js", "JavaScript", 0, 0, 90, 0, 0, 0, 0, 0, 0, 0, 4, 7, 101
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\storesNewUI\trafficCongestionSlice.js", "JavaScript", 0, 0, 73, 0, 0, 0, 0, 0, 0, 0, 1, 5, 79
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\trafficFlowSlice.js", "JavaScript", 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 2, 17
+"c:\Users\a603\work\intelligent_traffic\frontend\src\stores\trafficInfoSlice.js", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 1, 3, 25
+"c:\Users\a603\work\intelligent_traffic\frontend\src\utils\fileDownload.js", "JavaScript", 0, 0, 236, 0, 0, 0, 0, 0, 0, 0, 22, 42, 300
+"c:\Users\a603\work\intelligent_traffic\frontend\src\utils\fileDownload_new.js", "JavaScript", 0, 0, 236, 0, 0, 0, 0, 0, 0, 0, 22, 42, 300
+"c:\Users\a603\work\intelligent_traffic\frontend\src\websoketService.js", "JavaScript", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 6, 24
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\css\bootstrap-theme.css", "PostCSS", 0, 0, 0, 581, 0, 0, 0, 0, 0, 0, 6, 0, 587
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\css\bootstrap-theme.min.css", "PostCSS", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5, 0, 6
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\css\bootstrap.css", "PostCSS", 0, 0, 0, 6826, 0, 0, 0, 0, 0, 0, 8, 0, 6834
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\css\bootstrap.min.css", "PostCSS", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5, 0, 6
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\fonts\glyphicons-halflings-regular.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 288, 0, 0, 0, 0, 288
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\js\bootstrap.js", "JavaScript", 0, 0, 1752, 0, 0, 0, 0, 0, 0, 0, 211, 618, 2581
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\js\bootstrap.min.js", "JavaScript", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 5, 0, 6
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\bootstrap-3.4.1-dist\js\npm.js", "JavaScript", 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 1, 0, 13
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\jquery-3.7.0.min.js", "JavaScript", 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\loadingPixStream.js", "JavaScript", 0, 0, 916, 0, 0, 0, 0, 0, 0, 0, 95, 152, 1163
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\record.js", "JavaScript", 0, 0, 211, 0, 0, 0, 0, 0, 0, 0, 28, 7, 246
+"c:\Users\a603\work\intelligent_traffic\frontend\statics\webRtcPlayer.js", "JavaScript", 0, 0, 213, 0, 0, 0, 0, 0, 0, 0, 36, 48, 297
+"Total", "-", 8, 22361, 8986, 14818, 114, 1, 133, 910, 6936, 9767, 2012, 3561, 69607

@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import styles from './index.module.scss'
 import { setAllOptstrategyText } from 'stores/storesNewUI/junctionOptstrategySlice'
 // 展示：路口信控优化策略三段文字
-// 文本来自 redux: state.junctionOptstrategy.{previousStr,currentOptr,result}
+// 文本来自 redux: state.junctionOptstrategy.{previousStr,currentStr,result}
 export default function JunctionOptstrategy() {
-  const { previousStr, currentOptr, result } = useSelector(
+  const { previousStr, currentStr, result } = useSelector(
     (state) => state.junctionOptstrategy
   )
 
@@ -55,7 +55,7 @@ export default function JunctionOptstrategy() {
             <span className={styles.dot}></span>
             <span className={styles.text}>当前方案</span>
           </div>
-          <div className={styles.content}>{renderMultiline(currentOptr)}</div>
+          <div className={styles.content}>{renderMultiline(currentStr)}</div>
         </div>
         <div className={styles.optResult}>
           <div className={styles.optResultTitle}>

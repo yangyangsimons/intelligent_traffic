@@ -28,6 +28,79 @@ const validateAndCleanCoordinates = (coords) => {
   return [cleanLng, cleanLat]
 }
 
+// 坐标系转换（GCJ-02 <-> WGS-84），仅在中国大陆区域内进行偏移计算
+const outOfChina = (lng, lat) =>
+  lng < 72.004 || lng > 137.8347 || lat < 0.8293 || lat > 55.8271
+
+function transformLat(x, y) {
+  let ret =
+    -100.0 +
+    2.0 * x +
+    3.0 * y +
+    0.2 * y * y +
+    0.1 * x * y +
+    0.2 * Math.sqrt(Math.abs(x))
+  ret +=
+    ((20.0 * Math.sin(6.0 * x * Math.PI) + 20.0 * Math.sin(2.0 * x * Math.PI)) *
+      2.0) /
+    3.0
+  ret +=
+    ((20.0 * Math.sin(y * Math.PI) + 40.0 * Math.sin((y / 3.0) * Math.PI)) *
+      2.0) /
+    3.0
+  ret +=
+    ((160.0 * Math.sin((y / 12.0) * Math.PI) +
+      320 * Math.sin((y * Math.PI) / 30.0)) *
+      2.0) /
+    3.0
+  return ret
+}
+
+function transformLon(x, y) {
+  let ret =
+    300.0 +
+    x +
+    2.0 * y +
+    0.1 * x * x +
+    0.1 * x * y +
+    0.1 * Math.sqrt(Math.abs(x))
+  ret +=
+    ((20.0 * Math.sin(6.0 * x * Math.PI) + 20.0 * Math.sin(2.0 * x * Math.PI)) *
+      2.0) /
+    3.0
+  ret +=
+    ((20.0 * Math.sin(x * Math.PI) + 40.0 * Math.sin((x / 3.0) * Math.PI)) *
+      2.0) /
+    3.0
+  ret +=
+    ((150.0 * Math.sin((x / 12.0) * Math.PI) +
+      300.0 * Math.sin((x / 30.0) * Math.PI)) *
+      2.0) /
+    3.0
+  return ret
+}
+
+function deltaOffset(lng, lat) {
+  const a = 6378245.0
+  const ee = 0.00669342162296594323
+  let dLat = transformLat(lng - 105.0, lat - 35.0)
+  let dLng = transformLon(lng - 105.0, lat - 35.0)
+  const radLat = (lat / 180.0) * Math.PI
+  let magic = Math.sin(radLat)
+  magic = 1 - ee * magic * magic
+  const sqrtMagic = Math.sqrt(magic)
+  dLat = (dLat * 180.0) / (((a * (1 - ee)) / (magic * sqrtMagic)) * Math.PI)
+  dLng = (dLng * 180.0) / ((a / sqrtMagic) * Math.cos(radLat) * Math.PI)
+  return { dLng, dLat }
+}
+
+// 高德返回为 GCJ-02，将其转换为 WGS-84
+function gcj02ToWgs84(lng, lat) {
+  if (outOfChina(lng, lat)) return [lng, lat]
+  const { dLng, dLat } = deltaOffset(lng, lat)
+  return [lng - dLng, lat - dLat]
+}
+
 export default function Amap({ isVisible = true }) {
   const dispatch = useDispatch()
   const selectedPosition = useSelector(
@@ -106,8 +179,10 @@ export default function Amap({ isVisible = true }) {
     // 发送坐标到后端的工具函数
     const sendCoordinates = async (lng, lat) => {
       try {
-        const payload = { longitude: lng, latitude: lat }
-        console.log('Sending coordinates to backend:', payload)
+        // AMap 点选返回的是 GCJ-02，这里转换为 WGS-84 后再发送
+        const [wgsLng, wgsLat] = gcj02ToWgs84(lng, lat)
+        const payload = { longitude: wgsLng, latitude: wgsLat }
+        console.log('Sending coordinates to backend (WGS-84):', payload)
         const res = await fetch(
           'http://localhost:8080/simulation/section/transferJunction',
           {
@@ -124,6 +199,23 @@ export default function Amap({ isVisible = true }) {
         }
       } catch (err) {
         console.error('Failed to send coordinates:', err)
+      }
+    }
+
+    // 覆盖物点击时也发送坐标，避免被覆盖物拦截
+    const handleOverlayClick = (e) => {
+      try {
+        // const lng = Number(e?.lnglat?.getLng?.() ?? e?.lnglat?.lng)
+        // const lat = Number(e?.lnglat?.getLat?.() ?? e?.lnglat?.lat)
+        const lng = Number(e?.lnglat?.getLng())
+        const lat = Number(e?.lnglat?.getLat())
+        if (!isNaN(lng) && !isNaN(lat)) {
+          // 防止事件冒泡导致 map 与覆盖物同时触发
+          e?.stopPropagation?.()
+          sendCoordinates(lng, lat)
+        }
+      } catch (err) {
+        console.warn('处理覆盖物点击坐标失败:', err)
       }
     }
 
@@ -151,6 +243,7 @@ export default function Amap({ isVisible = true }) {
 
         // 验证中心点坐标
         const centerCoord = validateAndCleanCoordinates([112.883476, 28.231231])
+
         if (!centerCoord) {
           console.error('Invalid center coordinates')
           return
@@ -160,13 +253,13 @@ export default function Amap({ isVisible = true }) {
         map = new AMap.Map('container1', {
           resizeEnable: true,
           center: centerCoord,
-          zoom: 16,
+          zoom: 15,
           viewMode: '3D',
           pitch: 40,
           rotation: 25,
-          mapStyle: 'amap://styles/6b3bfb6d0d8ae9758a0beb4b5c900f3a', // 科技蓝主题
+          // mapStyle: 'amap://styles/6b3bfb6d0d8ae9758a0beb4b5c900f3a', // 科技蓝主题
           buildingAnimation: true,
-          features: ['bg', 'road', 'building', 'water'],
+          // features: ['bg', 'road', 'building', 'water'],
           // 增强光照效果
           light: {
             color: 'white', // 光源颜色
@@ -183,18 +276,31 @@ export default function Amap({ isVisible = true }) {
         mapInstanceRef.current = map
 
         // 地图点击事件: 获取经纬度并发送到后端
+        mapRef.current = map
         handleMapClick = (e) => {
           if (!e || !e.lnglat) return
           // 高德返回的是 AMap.LngLat 实例
-          const lng = Number(e.lnglat.getLng?.() ?? e.lnglat.lng)
-          const lat = Number(e.lnglat.getLat?.() ?? e.lnglat.lat)
+          const lng = Number(e?.lnglat?.getLng?.())
+          const lat = Number(e?.lnglat?.getLat?.())
           if (isNaN(lng) || isNaN(lat)) {
             console.warn('Invalid click coordinates:', e.lnglat)
             return
           }
+          console.log('Map clicked at (GCJ-02)------:', lng, lat)
           sendCoordinates(lng, lat)
         }
         map.on('click', handleMapClick)
+        // map.on('click', (e) => {
+        //   try {
+        //     const lng = Number(e?.lnglat?.getLng?.())
+        //     const lat = Number(e?.lnglat?.getLat?.())
+        //     if (!isNaN(lng) && !isNaN(lat)) {
+        //       console.log('Map clicked at coordinates (GCJ-02):', lng, lat)
+        //     }
+        //   } catch (err) {
+        //     console.warn('处理地图点击坐标失败:', err)
+        //   }
+        // })
 
         // 等待地图完全加载后再添加覆盖物
         map.on('complete', () => {
@@ -242,10 +348,15 @@ export default function Amap({ isVisible = true }) {
                 strokeColor: 'blue',
                 strokeWeight: 14,
                 lineJoin: 'round',
+                // 提示可点击
+                cursor: 'pointer',
               })
               map.add(polyline)
               markersRef.current.push(polyline)
               polylineRef.current = polyline // 保存到ref中
+
+              // 线路点击也触发坐标发送
+              polyline.on('click', handleOverlayClick)
             }
 
             // 动态交通灯标记
@@ -264,6 +375,8 @@ export default function Amap({ isVisible = true }) {
                   offset: new AMap.Pixel(-16, -16),
                   animation: 'AMAP_ANIMATION_DROP',
                   extData: { id: `light-${i + 1}` },
+                  clickable: true,
+                  cursor: 'pointer',
                 })
 
                 // 鼠标交互 - 使用ref中的polyline
@@ -288,6 +401,9 @@ export default function Amap({ isVisible = true }) {
 
                 map.add(marker)
                 markersRef.current.push(marker)
+
+                // 交通灯标记点击也触发坐标发送
+                marker.on('click', handleOverlayClick)
               } catch (error) {
                 console.warn(`创建交通灯标记 ${i} 失败:`, error, coord)
               }
@@ -306,6 +422,7 @@ export default function Amap({ isVisible = true }) {
                     border-radius: 50%;
                     box-shadow: 0 0 12px rgba(255,71,87,0.6);
                     animation: pulse 1.5s infinite;
+                    cursor: pointer;
                   ">
                     <style>
                       @keyframes pulse {
@@ -317,9 +434,13 @@ export default function Amap({ isVisible = true }) {
                   </div>
                 `,
                 offset: new AMap.Pixel(-10, -10),
+                clickable: true,
               })
               map.add(centerMarker)
               markersRef.current.push(centerMarker)
+
+              // 中心点点击也触发坐标发送
+              centerMarker.on('click', handleOverlayClick)
             } catch (error) {
               console.warn('创建中心点标记失败:', error)
             }
@@ -339,9 +460,14 @@ export default function Amap({ isVisible = true }) {
                   }),
                   offset: new AMap.Pixel(-12, -12),
                   zIndex: 130,
+                  clickable: true,
+                  cursor: 'pointer',
                 })
                 map.add(alertMarker)
                 markersRef.current.push(alertMarker)
+
+                // 警告图标点击也触发坐标发送
+                alertMarker.on('click', handleOverlayClick)
               })
             } catch (error) {
               console.warn('创建警告图标标记失败:', error)

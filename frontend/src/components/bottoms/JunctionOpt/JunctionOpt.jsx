@@ -1,9 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import styles from './index.module.scss'
+import btnDetails from 'assets/image/btn-details.png'
 import { setAllTexts } from 'stores/storesNewUI/junctionOptSlice'
+import OptText from 'components/rights/OptText/OptText'
 // 展示型组件：数据来自 junctionOpt slice
 export default function JunctionOpt() {
+  //控制OptText是否需要显示,点击details的按钮才显示和隐藏
+  const [showOptText, setShowOptText] = useState(false)
+  const toggleOptText = () => {
+    setShowOptText(!showOptText)
+  }
   const { previousPlanText, currentPlanText, optimizeResultText } = useSelector(
     (state) => state.junctionOpt
   )
@@ -24,8 +31,9 @@ export default function JunctionOpt() {
 
   return (
     <div className={styles.junctionOptstrategy}>
-      <header className={styles.title}>
+      <header className={styles.title} onClick={toggleOptText}>
         <span>信控优化策略</span>
+        <img className={styles.details} src={btnDetails} alt='' />
       </header>
       <main>
         <div className={styles.preStrategy}>
@@ -54,6 +62,7 @@ export default function JunctionOpt() {
           <div className={styles.content}>{optimizeResultText}</div>
         </div>
       </main>
+      {showOptText && <OptText onClose={() => setShowOptText(false)} />}
     </div>
   )
 }

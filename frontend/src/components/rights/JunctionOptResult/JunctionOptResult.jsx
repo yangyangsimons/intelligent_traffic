@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 
 import styles from './index.module.scss'
-import JunctionOptstrategy from 'components/rights/JunctionOptstrategy/JunctionOptstrategy'
+// import JunctionOptstrategy from 'components/rights/JunctionOptstrategy/JunctionOptstrategy'
 import * as echarts from 'echarts'
 import { useSelector, useDispatch } from 'react-redux'
 import { setBothFlows } from 'stores/storesNewUI/junctionOptResultSlice'
@@ -145,10 +145,10 @@ export default function JunctionOptResult() {
       <div className={styles.contentContainer}>
         <div
           id='junctionOptResult'
-          style={{ width: '100%', height: '200px' }}
+          style={{ width: '100%', height: '270px' }}
         ></div>
       </div>
-      <JunctionOptstrategy />
+      {/* <JunctionOptstrategy /> */}
       {showOptText && <OptText onClose={() => setShowOptText(false)} />}
     </div>
   )

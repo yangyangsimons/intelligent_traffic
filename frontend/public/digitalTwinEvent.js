@@ -1,3 +1,6 @@
+// Note: This file is included directly via a <script> tag in index.html.
+// Avoid using Node-specific APIs like require() here.
+
 function controlModuleChanged(infoObject) {
   const event = new CustomEvent('controlModuleChanged', { detail: infoObject })
   window.dispatchEvent(event)
@@ -104,6 +107,19 @@ function junctionOptResultChanged(infoObject) {
 
 function optSelectChanged(infoObject) {
   const event = new CustomEvent('optSelectChanged', {
+    detail: infoObject,
+  })
+  window.dispatchEvent(event)
+}
+
+function greenwavechanged(infoObject) {
+  window.updateGeoJSONColors({
+    ids: infoObject.ids,
+    color: infoObject.color ? infoObject.color : 'green',
+  })
+}
+function greenSettingDataChanged(infoObject) {
+  const event = new CustomEvent('greenSettingDataChanged', {
     detail: infoObject,
   })
   window.dispatchEvent(event)

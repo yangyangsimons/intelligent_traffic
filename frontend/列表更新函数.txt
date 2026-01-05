@@ -1,0 +1,98 @@
+1.更新信控优化策略详情（中间展开图）文字部分：currentStr表示当前方案，result表示协调效果跟踪，
+
+window.junctionOptstrategyChanged({
+  currentStr:
+    '工作日策略，交通流呈现早晚高峰明显、午间相对平稳的特征。为保障通勤高峰时段道路畅通，系统采用了高峰优先配时策略，重点对岳麓西大道与望青路交叉口、岳麓西大道与旺龙路交叉口的信号灯进行了绿灯时长延长及相位优化，提升主干道通行效率并减少排队长度。',
+  result: '各路口的车辆排队长度平均下降27.7%，车辆延误时间下降37%，平均每分钟吞吐量上升25.8%',
+})
+
+
+2. 更新信控优化策略详情（中间展开图）图表数据的方式如下：current表示优化前，weekly表示优化后。
+更新平均每分钟吞吐量:
+window.optSelectChanged({
+  averageThroughput: {
+    current: [32, 44, 25, 28, 29, 86],
+    weekly:  [39, 57, 30, 33, 33, 115],
+  },
+})
+更新车辆排队长度：
+window.optSelectChanged({
+ carLine : {
+    current: [321, 44, 25, 28, 29, 86],
+    weekly:  [391, 57, 30, 33, 33, 115],
+  },
+})
+更新平均延误时间：
+window.optSelectChanged({
+ delayTime : {
+    current: [321, 44, 25, 28, 29, 86],
+    weekly:  [391, 57, 30, 33, 33, 115],
+  },
+})
+
+3.设置地图中绿波路段的方式：ids数组参考text.geojson中的数据。
+window.greenwavechanged({
+ids:[1,2,3]
+})
+
+4.绿波道路设置
+window.greenSettingDataChanged(
+  [
+    {
+      name: '岳麓大道与旺龙路',
+      direction: '由北向南',
+      phase1: '红灯62秒',
+      phase2: '绿灯82秒',
+      phase3: '黄灯3秒',
+      phase4: '红灯81秒',
+      diff: '0',
+    },
+    {
+      name: '岳麓大道与旺龙路',
+      direction: '由北向南',
+      phase1: '红灯62秒',
+      phase2: '绿灯82秒',
+      phase3: '黄灯3秒',
+      phase4: '红灯81秒',
+      diff: '0',
+    },
+    {
+      name: '岳麓大道与旺龙路',
+      direction: '由北向南',
+      phase1: '红灯62秒',
+      phase2: '绿灯82秒',
+      phase3: '黄灯3秒',
+      phase4: '红灯81秒',
+      diff: '0',
+    },
+    {
+      name: '岳麓大道与旺龙路',
+      direction: '由北向南',
+      phase1: '红灯62秒',
+      phase2: '绿灯82秒',
+      phase3: '黄灯3秒',
+      phase4: '红灯81秒',
+      diff: '0',
+    },
+    {
+      name: '岳麓大道与旺龙路',
+      direction: '由北向南',
+      phase1: '红灯62秒',
+      phase2: '绿灯82秒',
+      phase3: '黄灯3秒',
+      phase4: '红灯81秒',
+      diff: '15711秒',
+    }
+  ]
+)
+
+5.修改信控优化策略,接收一个对象来修改三个区间的文字，示例如下
+junctionOptChanged({
+  previousPlanText: '路线1，路线2，路线3，绿波持续时间1511分钟',
+  currentPlanText:
+    '路口1： 红灯40秒，绿灯12秒，黄灯3秒\n路口21： 红灯351秒，绿灯15秒，黄灯3秒',
+  optimizeResultText: '通过区间时间与停车次数统计',
+})
+
+
+

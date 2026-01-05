@@ -37,6 +37,8 @@ import junctionTimeprogressReducer from 'stores/storesNewUI/junctionTimeprogress
 import junctionOptstrategyReducer from 'stores/storesNewUI/junctionOptstrategySlice'
 import junctionOptResultReducer from 'stores/storesNewUI/junctionOptResultSlice'
 import optSelectReducer from 'stores/storesNewUI/optselectSlice.js'
+import greenSettingReducer from 'stores/storesNewUI/greenSettingSlice.js'
+import videoShowReducer from 'stores/storesNewUI/videoShowSlice.js'
 const store = configureStore({
   reducer: {
     optSelect: optSelectReducer,
@@ -76,6 +78,8 @@ const store = configureStore({
     junctionTimeprogress: junctionTimeprogressReducer,
     junctionOptstrategy: junctionOptstrategyReducer,
     junctionOptResult: junctionOptResultReducer,
+    greenSetting: greenSettingReducer,
+    videoShow: videoShowReducer,
   },
 })
 

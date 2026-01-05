@@ -36,13 +36,14 @@ export default function TrafficRank() {
     const intervalId = startAutoScroll()
 
     const highStatusItems = listItems.filter(
-      (item) => item.status === '极高' || item.status === '高'
+      (item) => item?.status === '极高' || item?.status === '高'
     )
 
     const getRandomItem = () => {
-      if (highStatusItems.length === 0) return null
-      const randomIndex = Math.floor(Math.random() * highStatusItems.length)
-      return highStatusItems[randomIndex]
+      const source = highStatusItems.length > 0 ? highStatusItems : listItems
+      if (!source || source.length === 0) return null
+      const randomIndex = Math.floor(Math.random() * source.length)
+      return source[randomIndex]
     }
 
     setCurrentItem(getRandomItem())
@@ -82,41 +83,45 @@ export default function TrafficRank() {
     }
   }, [dispatch])
 
-  const renderList = listItems.map((item, index) => (
-    <div className={styles.listItem} key={index}>
-      <span className={styles.rank}>{index + 1}</span>
-      <span className={styles.name}>{item.name}</span>
-      <span className={styles.positionText}>{item.position}</span>
-      <span className={styles.number}>{item.number}</span>
-      <span
-        className={`${styles.isAlert} ${
-          item.isAlert === '是' ? styles.alertYes : styles.alertNo
-        }`}
-      >
-        {item.isAlert}
-      </span>
-      <span
-        className={`${styles.isDeal} ${
-          item.isDeal === '是' ? styles.dealYes : styles.dealNo
-        }`}
-      >
-        {item.isDeal}
-      </span>
-      <span className={styles.speed}>{item.speed} km/h</span>
-      <span className={styles.time}>{item.time}</span>
-      <span
-        className={`${styles.status} ${
-          item.status.includes('极')
-            ? styles.red
-            : item.status.includes('高')
-            ? styles.yellow
-            : styles.green
-        }`}
-      >
-        {item.status}
-      </span>
-    </div>
-  ))
+  const getStatusClass = (status) => {
+    if (!status || typeof status !== 'string') return styles.green
+    if (status.includes('极')) return styles.red
+    if (status.includes('高')) return styles.yellow
+    return styles.green
+  }
+
+  const renderList = listItems.map((item, index) => {
+    const statusText = item?.status ?? '—'
+    return (
+      <div className={styles.listItem} key={index}>
+        <span className={styles.rank}>{index + 1}</span>
+        <span className={styles.name}>{item?.name ?? '—'}</span>
+        <span className={styles.positionText}>{item?.position ?? '—'}</span>
+        <span className={styles.number}>{item?.number ?? '—'}</span>
+        <span
+          className={`${styles.isAlert} ${
+            item?.isAlert === '是' ? styles.alertYes : styles.alertNo
+          }`}
+        >
+          {item?.isAlert ?? '否'}
+        </span>
+        <span
+          className={`${styles.isDeal} ${
+            item?.isDeal === '是' ? styles.dealYes : styles.dealNo
+          }`}
+        >
+          {item?.isDeal ?? '否'}
+        </span>
+        <span className={styles.speed}>
+          {item?.speed != null ? item.speed + ' km/h' : '—'}
+        </span>
+        <span className={styles.time}>{item?.time ?? '—'}</span>
+        <span className={`${styles.status} ${getStatusClass(statusText)}`}>
+          {statusText}
+        </span>
+      </div>
+    )
+  })
 
   if (!currentItem) {
     return (

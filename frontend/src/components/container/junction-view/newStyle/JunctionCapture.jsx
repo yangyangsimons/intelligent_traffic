@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setCarData } from 'stores/junctionLight/carDataSlice'
 import { setImages } from 'stores/junctionLight/imageDataSlice'
-import preVideo from 'assets/videos/PRE.mp4'
-import optVideo from 'assets/videos/OPT.mp4'
+// import preVideo from 'assets/videos/PRE.mp4'
+// import optVideo from 'assets/videos/OPT.mp4'
 import styles from './css/junctionCapture.module.scss'
 
 export default function JunctionCapture() {
@@ -77,11 +77,11 @@ export default function JunctionCapture() {
         {/* {renderImages}
          */}
         <div className={styles.imgContainer}>
-          <video id='PRE' muted src={preVideo}></video>
+          {/* {<video id='PRE' muted src={preVideo}></video>} */}
           {/* <span className={styles.imgTitle}>控制方案（优化前）</span> */}
         </div>
         <div className={styles.imgContainer}>
-          <video id='OPT' muted src={optVideo}></video>
+          {/* <video id='OPT' muted src={optVideo}></video> */}
           {/* <span className={styles.imgTitle}>控制方案（优化后）</span> */}
         </div>
       </section>

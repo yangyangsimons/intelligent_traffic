@@ -25,7 +25,7 @@ const initialState = {
       name: '异常停车',
       position: '112.877688，28.232243',
       number: '湘AXXXX',
-      status: '高',
+      status: '普通',
       isAlert: '是',
       isDeal: '否',
       speed: '0',

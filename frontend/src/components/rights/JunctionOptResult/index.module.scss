@@ -1,20 +1,37 @@
 @use "../../../css/common.scss" as common;
 .trafficVolume {
-    width: 100%;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
-    // background-color: rgba(255, 255, 255, 0.3);
+
     @include common.rightElementSize;
-    height: 580px;
+    height: 310px;
+    width: 950px;
     background-repeat: no-repeat;
 
     .title {
-        @include common.bottomElementTitle;
+        width: 100%;
+        height: 46px;
+        background: url("../../../assets/image/bottom-title.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: left;
+        align-items: center;
         display: flex;
         justify-content: space-between;
+        span {
+            font-size: 22px;
+            font-weight: 700;
+            margin-left: 2rem;
+            background: linear-gradient(to bottom, #ffffff, #73fcfd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
         .details {
             cursor: pointer;
             margin-right: 10px;
@@ -23,7 +40,7 @@
     .contentContainer {
         position: relative;
         width: 100%;
-        height: 200px;
+        height: 250px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

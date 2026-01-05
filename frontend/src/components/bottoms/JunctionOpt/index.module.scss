@@ -9,7 +9,7 @@
 }
 .junctionOptstrategy {
     @include common.rightElementSize;
-    width: 550px;
+    width: 500px;
     height: 100%;
     // border: 1px solid #ccc;
     overflow-y: auto;
@@ -24,7 +24,8 @@
         display: flex;
         justify-content: left;
         align-items: center;
-
+        display: flex;
+        justify-content: space-between;
         span {
             font-size: 22px;
             font-weight: 700;
@@ -34,6 +35,10 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
+        }
+        .details {
+            cursor: pointer;
+            margin-right: 10px;
         }
     }
     .dot {

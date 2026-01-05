@@ -1,0 +1,11 @@
+@use "../../../css/common.scss" as common;
+.mapContainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+        @include common.bottomElementTitle;
+    }
+}
